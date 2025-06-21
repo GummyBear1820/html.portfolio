@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adhitya's website</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Adhitya's Portfolio</h1>
+    <p>
+      Hi, I'm Adhitya Srinivasan — a junior at Virginia Tech majoring in
+      Computer Science. I’m passionate about combining software and hardware to
+      build practical, creative solutions. From designing automated systems with
+      Arduino to developing web applications with React, I enjoy tackling
+      real-world problems through code and engineering. With experience in C++,
+      Python, Java, and tools like Git and Docker, I’m always exploring new
+      technologies and challenging myself to grow. Feel free to look around and
+      check out my projects!
+    </p>
+
+    <div class="tabs">
+      <button onclick="setTab(0)">Skills</button>
+      <button onclick="setTab(1)">Education</button>
+    </div>
+
+    <div id="tab0" class="content">
+      <ul>
+        <li><b>Programming:</b> C, C++, Java, Javascript, Python</li>
+        <li>
+          <b>Tools & Technologies:</b> Git/GitHub, Docker, Linux, MATLAB,
+          RStudio, React
+        </li>
+        <li>
+          <b>Mathematics:</b> Calculus I & II, Multivariable Calculus, Discrete
+          Math, Linear Algebra
+        </li>
+      </ul>
+    </div>
+    <div id="tab1" class="content">
+      <h2>Virginia Tech</h2>
+      <ul>
+        <li>Junior</li>
+        <li>Computer Science</li>
+        <li>Honors College</li>
+        <li>Cumulative GPA: 3.51</li>
+        <li>
+          Relevant Courses: Intro to Computer Organization (CS 2505), Intro to
+          Problem Solving (CS 2104), Software Design & Data Structures (CS 2114)
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      const tabs = document.querySelectorAll(".content");
+      const btns = document.querySelectorAll("button");
+      function setTab(i) {
+        tabs.forEach((t) => t.classList.remove("active"));
+        btns.forEach((b) => b.classList.remove("active-btn"));
+        tabs[i].classList.add("active");
+        btns[i].classList.add("active-btn");
+      }
+      setTab(0); // Default tab
+    </script>
+    <a href="./public/contact.html">Contact Me</a>
+    <a href="./public/projects.html">Projects</a>
+  </body>
+</html>
+
+<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
+
+<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
+
+<!-- TODO 4: Add titles/subtitles etc. -->
+
+<!-- TODO 5: Add a link to the project pages -->
+
+<!-- TODO 6: Add images to show the project previews
+HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
+
+<!-- TODO 7: Add the Contact Me and About Me page links -->
